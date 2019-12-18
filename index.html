@@ -1,0 +1,99 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    </head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
+        <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+
+        <a-assets>
+            <a-asset-item id="0" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/0.gltf"></a-asset-item>
+            <a-asset-item id="1" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/1.gltf"></a-asset-item>
+            <a-asset-item id="2" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/2.gltf"></a-asset-item>
+            <a-asset-item id="3" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/3.gltf"></a-asset-item>
+            <a-asset-item id="4" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/4.gltf"></a-asset-item>
+            <a-asset-item id="5" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/5.gltf"></a-asset-item>
+            <a-asset-item id="6" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/6.gltf"></a-asset-item>
+            <a-asset-item id="7" src="https://raw.githubusercontent.com/jondsmart/falloutboy/master/7.gltf"></a-asset-item>
+            
+            
+                       
+                     
+                  </a-assets>
+            
+  <!-- cities -->
+            
+        <a-marker id="animated-marker" type='barcode' value='0'>
+            <a-entity
+                animation-mixer
+                gltf-model="#0"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>
+      
+         <a-marker id="animated-marker" type='barcode' value='1'>
+            <a-entity
+                animation-mixer
+                gltf-model="#1"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>    
+            
+            <a-marker id="animated-marker" type='barcode' value='2'>
+            <a-entity
+                animation-mixer
+                gltf-model="#2"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='3'>
+            <a-entity
+                animation-mixer
+                gltf-model="#3"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='4'>
+            <a-entity
+                animation-mixer
+                gltf-model="#4"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='5'>
+            <a-entity
+                animation-mixer
+                gltf-model="#5"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='6'>
+            <a-entity
+                animation-mixer
+                gltf-model="#6"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+              <a-marker id="animated-marker" type='barcode' value='7'>
+            <a-entity
+                animation-mixer
+                gltf-model="#7"
+                scale="0.02 0.02 0.02">
+            </a-entity>
+        </a-marker>  
+            
+
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
